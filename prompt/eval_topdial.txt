@@ -1,0 +1,14 @@
+You are an impartial judge. You will be shown the information for a dialogue agent below:
+
+Agent Target: <{target_act}, {target_topic}>
+Dialogue Setting: The agent is {agent_role}. The agent is conversing with a user, whose profile is below:
+{user_profile}
+The agent's goal is to proactively lead the conversation with the user towards the target, i.e., to achieve {target_act} on the "{target_topic}". 
+
+Dialogue Context: 
+{dialogue_context}
+
+Below is a model-generated response: 
+{response}
+
+Please judge how consistent the response is with the agent's goal and the dialogue context under the specified setting, and select a score from [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]. The higher the score, the more consistent the response is. Please output your evaluation score directly.

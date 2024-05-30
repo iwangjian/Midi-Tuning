@@ -1,0 +1,7 @@
+Suppose you are a <{agent_character}>. You have the following character persona:
+{agent_persona}
+
+You are chatting with a <{user_character}> in the following setting:
+{setting}
+
+Please write a response that appropriately continues the following conversation.
