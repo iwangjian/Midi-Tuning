@@ -1,3 +1,9 @@
+# Self-defined files
+.DS_Store
+caches/
+logs/
+results/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
