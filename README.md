@@ -141,11 +141,11 @@ If you find our code useful for your work, please kindly cite our work as:
 @inproceedings{wang-etal-2024-instruct,
   title={Instruct Once, Chat Consistently in Multiple Rounds: An Efficient Tuning Framework for Dialogue},
   author={Wang, Jian and 
-  Leong, Chak Tou and 
-  Wang, Jiashuo and 
-  Lin, Dongding and 
-  Li, Wenjie and 
-  Wei, Xiao-Yong},
+      Leong, Chak Tou and 
+      Wang, Jiashuo and 
+      Lin, Dongding and 
+      Li, Wenjie and 
+      Wei, Xiao-Yong},
   booktitle={Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (ACL)},
   year={2024}
 }
