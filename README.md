@@ -101,11 +101,6 @@ python eval/eval_light.py \
 python eval/eval_light.py \
     --eval_file results/light/midi_${MODEL_NAME}/test_unseen_output.jsonl \
     --gold_file data/light/light_test_unseen.jsonl
-
-# for TopDial dataset
-python eval/eval_topdial.py \
-    --eval_file results/topdial/midi_{MODEL_NAME}/test_output.jsonl \
-    --gold_file data/topdial/dialogue_test.jsonl
 ```
 
 To measure the consistency probability, you can first download the `BERT-base-uncased` model from [Hugging Face](https://huggingface.co/google-bert/bert-base-uncased) and put all the files into the `pretrained/bert-base-uncased` directory. Then, you can run the following command to build a consistency estimator:
@@ -137,13 +132,6 @@ python eval/eval_by_gpt.py \
     --eval_file results/light/midi_${MODEL_NAME}/test_output.jsonl \
     --gold_file data/light/light_test.jsonl \
     --prompt_template prompt/eval_light.txt \
-    --model "gpt-4-turbo"
-
-# for TopDial dataset
-python eval/eval_by_gpt.py \
-    --eval_file results/topdial/midi_{MODEL_NAME}/test_output.jsonl \
-    --gold_file data/topdial/dialogue_test.jsonl \
-    --prompt_template prompt/eval_topdial.txt \
     --model "gpt-4-turbo"
 ```
 
