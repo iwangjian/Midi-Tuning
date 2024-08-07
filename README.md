@@ -103,7 +103,7 @@ python eval/eval_light.py \
     --gold_file data/light/light_test_unseen.jsonl
 ```
 
-To measure the consistency probability, you can first download the `BERT-base-uncased` model from [Hugging Face](https://huggingface.co/google-bert/bert-base-uncased) and put all the files into the `pretrained/bert-base-uncased` directory. Then, you can run the following command to build a consistency estimator:
+To measure the consistency probability, you can first download the `BERT-base-uncased` model from [Hugging Face](https://huggingface.co/google-bert/bert-base-uncased) and put all the files into the `pretrained/bert-base-uncased` directory. Then, you can run the following commands to build a consistency estimator:
 ```bash
 # training
 python src/detector/run.py --data_dir data/${DATASET_NAME} \
@@ -125,7 +125,7 @@ python src/detector/run.py --eval --plot --data_dir data/${DATASET_NAME} \
 ```
 Afterward, you can compute the consistency probability by adding the `--detector_model logs/${DATASET_NAME}/detector` argument when runing `eval/eval_light.py` or `eval/eval_topdial.py`.
 
-To obtain GPT-4 scores, you should first have an OpenAI API key and store it into a file, e.g., `openai_api_key.txt`. Then, you can run the following commands:
+To obtain GPT-4 scores, you should first have an OpenAI API key and store it into a file, e.g., `openai_api_key.txt`. Then, you can run the following command:
 ```bash
 # for LIGHT dataset
 python eval/eval_by_gpt.py \
